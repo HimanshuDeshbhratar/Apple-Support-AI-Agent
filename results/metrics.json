@@ -1,0 +1,313 @@
+{
+  "systems": {
+    "trivial": {
+      "system": "trivial",
+      "n": 200,
+      "intent_accuracy": 0.09,
+      "intent_macro_f1": 0.015012510425354463,
+      "action_accuracy": 0.73,
+      "escalate_precision": 0.0,
+      "escalate_recall": 0.0,
+      "escalate_f1": 0.0,
+      "reply_score_mean": 0.97775,
+      "reply_score_std": 0.0761080646186723,
+      "intent_report": {
+        "account_icloud": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "app_crash_freeze": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "battery_charging": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "billing_purchase": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "connectivity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "general_howto": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 19.0
+        },
+        "hardware_device": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "ios_update_bugs": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "music_media": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 19.0
+        },
+        "other": {
+          "precision": 0.09,
+          "recall": 1.0,
+          "f1-score": 0.1651376146788991,
+          "support": 18.0
+        },
+        "privacy_security": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "accuracy": 0.09,
+        "macro avg": {
+          "precision": 0.00818181818181818,
+          "recall": 0.09090909090909091,
+          "f1-score": 0.015012510425354463,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.0081,
+          "recall": 0.09,
+          "f1-score": 0.014862385321100917,
+          "support": 200.0
+        }
+      }
+    },
+    "simple_retrieval": {
+      "system": "simple_retrieval",
+      "n": 200,
+      "intent_accuracy": 0.445,
+      "intent_macro_f1": 0.45696195762593883,
+      "action_accuracy": 0.775,
+      "escalate_precision": 0.6285714285714286,
+      "escalate_recall": 0.4074074074074074,
+      "escalate_f1": 0.4943820224719101,
+      "reply_score_mean": 0.7065532449448321,
+      "reply_score_std": 0.23400678942779343,
+      "intent_report": {
+        "account_icloud": {
+          "precision": 0.7222222222222222,
+          "recall": 0.7222222222222222,
+          "f1-score": 0.7222222222222222,
+          "support": 18.0
+        },
+        "app_crash_freeze": {
+          "precision": 0.43478260869565216,
+          "recall": 0.5555555555555556,
+          "f1-score": 0.4878048780487805,
+          "support": 18.0
+        },
+        "battery_charging": {
+          "precision": 0.8,
+          "recall": 0.4444444444444444,
+          "f1-score": 0.5714285714285714,
+          "support": 18.0
+        },
+        "billing_purchase": {
+          "precision": 0.3157894736842105,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.32432432432432434,
+          "support": 18.0
+        },
+        "connectivity": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 18.0
+        },
+        "general_howto": {
+          "precision": 0.2608695652173913,
+          "recall": 0.3157894736842105,
+          "f1-score": 0.2857142857142857,
+          "support": 19.0
+        },
+        "hardware_device": {
+          "precision": 0.45454545454545453,
+          "recall": 0.2777777777777778,
+          "f1-score": 0.3448275862068966,
+          "support": 18.0
+        },
+        "ios_update_bugs": {
+          "precision": 0.4,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.2857142857142857,
+          "support": 18.0
+        },
+        "music_media": {
+          "precision": 0.5555555555555556,
+          "recall": 0.5263157894736842,
+          "f1-score": 0.5405405405405406,
+          "support": 19.0
+        },
+        "other": {
+          "precision": 0.1794871794871795,
+          "recall": 0.3888888888888889,
+          "f1-score": 0.24561403508771928,
+          "support": 18.0
+        },
+        "privacy_security": {
+          "precision": 0.7272727272727273,
+          "recall": 0.4444444444444444,
+          "f1-score": 0.5517241379310345,
+          "support": 18.0
+        },
+        "accuracy": 0.445,
+        "macro avg": {
+          "precision": 0.5015628593951873,
+          "recall": 0.4452418926103137,
+          "f1-score": 0.45696195762593883,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.5006293564051001,
+          "recall": 0.445,
+          "f1-score": 0.45652361218095355,
+          "support": 200.0
+        }
+      }
+    },
+    "agent": {
+      "system": "agent",
+      "n": 200,
+      "intent_accuracy": 0.825,
+      "intent_macro_f1": 0.8247933254760742,
+      "action_accuracy": 0.82,
+      "escalate_precision": 0.68,
+      "escalate_recall": 0.6296296296296297,
+      "escalate_f1": 0.6538461538461539,
+      "reply_score_mean": 0.8578148642861265,
+      "reply_score_std": 0.1435875666762815,
+      "intent_report": {
+        "account_icloud": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.9411764705882353,
+          "support": 18.0
+        },
+        "app_crash_freeze": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.9142857142857143,
+          "support": 18.0
+        },
+        "battery_charging": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1-score": 0.9473684210526315,
+          "support": 18.0
+        },
+        "billing_purchase": {
+          "precision": 0.8461538461538461,
+          "recall": 0.6111111111111112,
+          "f1-score": 0.7096774193548387,
+          "support": 18.0
+        },
+        "connectivity": {
+          "precision": 0.8181818181818182,
+          "recall": 1.0,
+          "f1-score": 0.9,
+          "support": 18.0
+        },
+        "general_howto": {
+          "precision": 0.65,
+          "recall": 0.6842105263157895,
+          "f1-score": 0.6666666666666666,
+          "support": 19.0
+        },
+        "hardware_device": {
+          "precision": 0.7619047619047619,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.8205128205128205,
+          "support": 18.0
+        },
+        "ios_update_bugs": {
+          "precision": 0.75,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.7894736842105263,
+          "support": 18.0
+        },
+        "music_media": {
+          "precision": 0.9444444444444444,
+          "recall": 0.8947368421052632,
+          "f1-score": 0.918918918918919,
+          "support": 19.0
+        },
+        "other": {
+          "precision": 0.5555555555555556,
+          "recall": 0.5555555555555556,
+          "f1-score": 0.5555555555555556,
+          "support": 18.0
+        },
+        "privacy_security": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 18.0
+        },
+        "accuracy": 0.825,
+        "macro avg": {
+          "precision": 0.833401536075333,
+          "recall": 0.8253588516746412,
+          "f1-score": 0.8247933254760742,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.8330397429368017,
+          "recall": 0.825,
+          "f1-score": 0.8244733201492415,
+          "support": 200.0
+        }
+      }
+    }
+  },
+  "judge_calibration": {
+    "primary": {
+      "task": "human_vs_auto_judge_on_agent_drafts",
+      "agreement": {
+        "exact_match_rate": 0.3888888888888889,
+        "n": 36.0
+      },
+      "human_dist": {
+        "ok": 12,
+        "good": 17,
+        "weak": 7
+      },
+      "auto_dist": {
+        "good": 27,
+        "ok": 8,
+        "weak": 1
+      },
+      "note": "36 agent drafts were scored by an independent human rubric focused on issue-specific helpfulness (not the keyword checklist used by the auto judge). Disagreement usually means the auto judge over-rates generic DM/diagnostic templates."
+    },
+    "secondary": {
+      "task": "intrinsic_reproducibility_on_references",
+      "agreement": {
+        "exact_match_rate": 1.0,
+        "n": 200.0
+      },
+      "note": "Reference quality bands were assigned with the same intrinsic function (sanity check only)."
+    }
+  },
+  "config_brand": "AppleSupport",
+  "n_golden": 200
+}
