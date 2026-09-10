@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hiver-apple-support-agent"
+version = "0.1.0"
+description = "Apple Support AI agent take-home for Hiver SDE Intern"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0.0",
+  "numpy>=1.24.0",
+  "scikit-learn>=1.3.0",
+  "openai>=1.40.0",
+  "python-dotenv>=1.0.0",
+  "tqdm>=4.66.0",
+  "huggingface_hub>=0.23.0",
+  "pyyaml>=6.0",
+  "rich>=13.0.0",
+  "joblib>=1.3.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["src*"]

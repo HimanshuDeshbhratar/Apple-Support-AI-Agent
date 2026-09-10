@@ -1,0 +1,15 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+data/raw/
+data/processed/*.joblib
+data/processed/*.csv
+results/*.jsonl
+.DS_Store
+*.egg-info/
+.idea/
+.vscode/

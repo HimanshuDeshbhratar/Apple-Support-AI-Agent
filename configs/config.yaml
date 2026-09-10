@@ -1,0 +1,75 @@
+# Apple Support AI Agent — configuration
+brand: AppleSupport
+brand_handle: "@AppleSupport"
+
+# Intent taxonomy derived from Apple Support tweet themes
+intents:
+  - id: battery_charging
+    description: Battery drain, charging failures, overheating while charging
+  - id: ios_update_bugs
+    description: Problems after iOS/iPadOS updates, install failures, regressions
+  - id: app_crash_freeze
+    description: Apps crashing, freezing, force-close loops, UI freezes
+  - id: connectivity
+    description: Wi-Fi, cellular, Bluetooth, AirDrop, continuity issues
+  - id: account_icloud
+    description: Apple ID, iCloud, sign-in, 2FA, storage, sync problems
+  - id: hardware_device
+    description: Physical device defects, screen, buttons, speakers, accessories
+  - id: music_media
+    description: Apple Music, iTunes, podcasts, media playback issues
+  - id: privacy_security
+    description: Privacy concerns, unexpected behavior, malware fears, data leakage
+  - id: billing_purchase
+    description: App Store charges, subscriptions, refunds, payment methods
+  - id: general_howto
+    description: How-to questions, feature discovery, settings help
+  - id: other
+    description: Does not fit other intents or is too ambiguous
+
+paths:
+  raw_csv: data/raw/train.csv
+  pairs_csv: data/processed/apple_pairs.csv
+  retrieval_index: data/processed/retrieval_index.joblib
+  golden_jsonl: data/golden/golden_set.jsonl
+  results_dir: results
+
+# Subsample sizes for fast local runs (<15 min)
+subsample:
+  seed: 42
+  retrieval_pairs: 8000
+  eval_holdout: 400
+
+retrieval:
+  top_k: 5
+  max_features: 50000
+  ngram_range: [1, 2]
+
+escalation:
+  # Auto-handle only when confidence is high and risk is low
+  auto_handle_min_confidence: 0.55
+  escalate_keywords:
+    - lawyer
+    - lawsuit
+    - sue
+    - legal
+    - police
+    - fbi
+    - stolen
+    - hacked
+    - identity theft
+    - child
+    - suicide
+    - self harm
+    - refund
+    - chargeback
+    - credit card fraud
+    - data breach
+    - doxx
+    - threaten
+
+llm:
+  # Uses OpenAI-compatible API when OPENAI_API_KEY is set; otherwise rule-based fallbacks
+  model: gpt-4o-mini
+  temperature: 0.2
+  judge_model: gpt-4o-mini
